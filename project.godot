@@ -8,9 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "MapAction",
+"class": "DialogueAction",
+"language": "GDScript",
+"path": "res://src/dialogue/dialogueAction.gd"
+}, {
+"base": "Node",
+"class": "LocalMap",
+"language": "GDScript",
+"path": "res://src/map/LocalMap.gd"
+}, {
+"base": "Reference",
+"class": "MapAction",
+"language": "GDScript",
+"path": "res://src/map/actions/mapAction.gd"
+} ]
 _global_script_class_icons={
-
+"DialogueAction": "",
+"LocalMap": "",
+"MapAction": ""
 }
 
 [application]
